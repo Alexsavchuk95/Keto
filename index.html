@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./fonts/Myriad/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./jquery/jquery.maskedinput.min.js"></script>
+    <title>Keto</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--BUTTON_MOBILE_NAVIGATION-->
+            <div id="menu-togle" class="menu-icon">
+                <div class="menu-icon-line"></div>
+            </div>
+            <!--MOBILE_NAVIGATION-->
+            <ul id="mobile-nav" class="list-mobile">
+                <li class="item-mobile">
+                    <a href="#rev" class="link-mobile">Отзывы</a>
+                </li>
+                <li class="item-mobile">
+                    <a href="#sale" class="link-mobile">Акция</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--  ========MOTIVATION========== -->
+    <section class="motivation">
+        <div class="motivation__cnt">
+            <h2 class="motivation__title">Всё думаешь как тебе похудеть? В этом тебе поможет <span>Keto</span>, с ним
+                всё просто.</h2>
+            <div class="img__cnt">
+                <div class="motivation__product"></div>
+                <div class="button__cnt">
+                    <a class="motivation__btn" href="#order">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     ==========Reviews============ -->
+    <section class="reviews" id="rev">
+        <h2>Наши отзывы</h2>
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <div class="reviews__item">
+                            <div class="person person1"></div>
+                            <p class="person__revie">Отличное средство для похудения. Сначала конечно сомневался, но
+                                попробовав убедился в его эфективности</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="reviews__item">
+                            <div class="person person2"></div>
+                            <p class="person__revie">Всем советую,очень помогло,не мог похудеть уже очень давно. С Keto
+                                я смог похудеть на 20кг всего за пару месяцев</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="reviews__item">
+                            <div class="person person3"></div>
+                            <p class="person__revie">Долго сомневался, но попробовав, увидел результаты уже через
+                                неделю, очень доволен. Всем советую</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button"></a>
+            <a class="slider__control slider__control_next" href="#" role="button"></a>
+        </div>
+    </section>
+    <!--   ============SALE============ -->
+    <section class="sale" id="sale">
+        <div class="sale__cnt">
+            <div class="sale__counter">
+                <h1 class="countdown-title">Акция дейвствует</h1>
+                <p class="countdown-sale">1500 грн</p>
+                <p class="countdown-price">799 грн</p>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-number">
+                        <span class="days countdown-time"></span>
+                        <span class="countdown-text">Дней</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="hours countdown-time"></span>
+                        <span class="countdown-text">Часов</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="minutes countdown-time"></span>
+                        <span class="countdown-text">Минут</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="seconds countdown-time"></span>
+                        <span class="countdown-text">Секунд</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sale__form" id="order">
+                <form action="">
+                    <div class="form__input">
+                        <input type="name" placeholder="Имя*">
+                    </div>
+                    <div class="form__input">
+                        <input type="text" id="phone" placeholder="Номер телефона*">
+                    </div>
+                    <button type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function () {
+            $("#phone").mask("+380(99) 999-9999");
+        });
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

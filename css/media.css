@@ -1,0 +1,35 @@
+/* ==========MEDIA_DESCTOP=========== */
+
+@media (max-width: 715px) {
+   .motivation__product {
+    display: none;
+  }
+
+  .button__cnt {
+    margin: 100px auto;
+  }
+
+  .sale__cnt {
+    flex-wrap: wrap;
+  }
+
+  .sale__counter {
+    margin-bottom: 30px;
+  }
+
+  .sale__form {
+    position: inherit;
+  }
+
+  form {
+    position: inherit;
+  }
+
+  .countdown-number {
+    padding: 5px;
+  }
+
+  .countdown-time {
+    padding: 5px;
+  }
+}
